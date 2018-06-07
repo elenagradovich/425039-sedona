@@ -5,8 +5,101 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="header container">
+      <nav>
+        <a class='header-logo' href='#' aria-label='Логотип "Седона"'>
+           <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта "Седона"'>
+        </a>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="sedona-hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <div class="container">
+        <div class="main-header">
+          <h1 class="main-header__title">Sedona</h1>
+        </div>
+        <div class="main-content">
+          <h2 class="main-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
+        <section class="advantages advantages--dif">
+          <h2 class="advantages__title ">Настоящий городок</h2>
+          <span class="advantages__number">№1</span>
+          <p class="advantages__content">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </section>
+
+        <ul class="features">
+          <li class="features__item">
+            <h2 class="features__title ">Жилье</h2>
+            <p class="features__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="features__item">
+            <h2 class="features__title ">Еда</h2>
+            <p class="features__content">Всегда заказывайте фирменный бургер. Вы не разачоруетесь!</p>
+          </li>
+          <li class="features__item">
+            <h2 class="features__title ">Сувениры</h2>
+            <p class="features__content">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+
+        <section class="advantages advantages--dif">
+          <h2 class="advantages__title ">Там есть Мост дьявола</h2>
+          <span class="advantages__number">№2</span>
+          <p class="advantages__content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </section>
+
+        <div class="advantages-container">
+          <section class="advantages">
+            <h2 class="advantages__title ">Небольшая площадь</h2>
+            <span class="advantages__number">№3</span>
+            <p class="advantages__content">Все достопримечательности  находятся очень близко</p>
+          </section>
+
+          <section class="advantages">
+            <h2 class="advantages__title ">Красивая дорога</h2>
+            <span class="advantages__number">№4</span>
+            <p class="advantages__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </section>
+
+          <section class="advantages">
+            <h2 class="advantages__title ">Мало туристов</h2>
+            <span class="advantages__number">№5</span>
+            <p class="advantages__content">Большинство едет в гранд каньон и толпится там</p>
+          </section>
+        </div>
+      </div>
+      <section class="offer">
+        <h3 class="offer__title ">Заинтересовались?</h3>
+        <p class="offer__content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="btn btn__search" href="#">Поиск гостиниц в Седоне</a>
+        <form>
+          <!------------------------------>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__item">
+        <p class="hashtag-sedona">#visitsedona</p>
+      </div>
+      <div class="footer__item">
+        <ul class="social">
+          <li class="social__item social__item--twitter"><a href="#">twitter</a></li>
+          <li class="social__item social__item--facebook"><a href="#">facebook</a></li>
+          <li class="social__item social__item--youtube"><a href="#">youtube</a></li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'><p>website by</p></a>
+      </div>
+    </footer>
   </body>
 </html>
