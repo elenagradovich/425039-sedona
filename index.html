@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel='stylesheet' href='css/style.css'>
   </head>
   <body>
     <header class="header container">
-      <nav>
-        <a class='header-logo' href='#' aria-label='Логотип "Седона"'>
+      <nav class="header__navigation">
+        <a class='header__logo' href='#' aria-label='Логотип "Седона"'>
            <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта "Седона"'>
         </a>
-        <ul>
+        <ul class="header__site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -77,12 +78,35 @@
         </div>
       </div>
       <section class="offer">
-        <h3 class="offer__title ">Заинтересовались?</h3>
+        <h3 class="offer__title">Заинтересовались?</h3>
         <p class="offer__content">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="btn btn__search" href="#">Поиск гостиниц в Седоне</a>
-        <form>
-          <!------------------------------>
+        <button type="button" class="btn btn__conditions-search">Поиск гостиниц в Седоне</button>
+
+        <form class="search-hotel-form visually-hidden" action="https://echo.htmlacademy.ru" method="get" hidden>
+          <label for="checkin-date">Дата заезда</label>
+          <input id="checkin-date" type="text" name="checkin-date" value="24 апреля 2017">
+
+          <label for="checkout-date">Дата выезда</label>
+          <input id="checkout-date" type="text" name="checkout-date" value="4 июля 2017">
+
+          <div class="form-input-fields">
+            <label for="adult-amount">Взрослые</label>
+            <button type='button' class="btn-reduce">Меньше</button>
+            <input id="adult-amount" type="text" name="adult-amount" value="2">
+            <button type="button" class="btn-increase">Больше</button>
+            <label for="adult-amount">Дети</label>
+            <button type='button' class="btn-reduce">Меньше</button>
+            <input id="children-amount" type="text" name="adult-amount" value="0">
+            <button type='button' class="btn-increase">Больше</button>
+          </div>
+          <button type="submit" class="btn btn_search">Найти</button>
         </form>
+        <section class="modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <p>
+            <img src="img/map.jpg" height="473" width="1200" alt="Седона">
+          </p>
+        </section>
       </section>
     </main>
 
@@ -91,14 +115,14 @@
         <p class="hashtag-sedona">#visitsedona</p>
       </div>
       <div class="footer__item">
-        <ul class="social">
-          <li class="social__item social__item--twitter"><a href="#">twitter</a></li>
-          <li class="social__item social__item--facebook"><a href="#">facebook</a></li>
-          <li class="social__item social__item--youtube"><a href="#">youtube</a></li>
+        <ul class="footer-social">
+          <li class="footer-social__item footer-social__item--twitter"><a href="#" target="_blank" aria-label="twitter"></a></li>
+          <li class="footer-social__item footer-social__item--facebook"><a href="#" target="_blank" aria-label="facebook"></a></li>
+          <li class="footer-social__item footer-social__item--youtube"><a href="#" target="_blank" aria-label="youtube"></a></li>
         </ul>
       </div>
       <div class="footer__item">
-        <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'><p>website by</p></a>
+        <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'><p class="copyright">website by</p></a>
       </div>
     </footer>
   </body>
