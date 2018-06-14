@@ -1,110 +1,112 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>HTML Academy: Седона</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic' rel='stylesheet'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-    <header class="header container">
-      <nav class="header__navigation">
-        <a class='header__logo' href='#' aria-label='Логотип "Седона"'>
-           <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта "Седона"'>
+    <header class='header container'>
+      <nav class='header__navigation'>
+        <a class='header__logo' href='#' aria-label='Логотип 'Седона''>
+           <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта 'Седона''>
         </a>
-        <ul class="header__site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <ul class='header__site-navigation'>
+          <li class="site-navigation__item"><a href='#'>Информация</a></li>
+          <li class="site-navigation__item"><a href='#'>Фото и видео</a></li>
+          <li class="site-navigation__item"><a href='#'>Карта штата</a></li>
+          <li class="site-navigation__item active"><a href='#'>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="main container">
-      <h1 class="visually-hidden">Форма подбора жилья</h1>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get" >
-        <fieldset class="filter__infrastructure">
+    <main class='main container'>
+      <h1 class='visually-hidden'>Форма подбора жилья</h1>
+      <form class='filter' action='https://echo.htmlacademy.ru' method='get' >
+        <fieldset class='filter__infrastructure'>
           <legend>Инфраструктура</legend>
           <ul>
-            <li class="filter__option">
-              <input id="filter-swim" type="checkbox" name="infrastructure-1" value="swim" checked>
-              <label for="filter-swim">Бассейн</label>
+            <li class='filter__option'>
+              <input id='filter-swim' type='checkbox' name='infrastructure-1' value='swim' checked>
+              <label for='filter-swim'>Бассейн</label>
             </li>
-            <li class="filter__option">
-              <input id="filter-parking" type="checkbox" name="infrastructure-2" value="parking">
-              <label for="filter-parking">Парковка</label>
+            <li class='filter__option'>
+              <input id='filter-parking' type='checkbox' name='infrastructure-2' value='parking'>
+              <label for='filter-parking'>Парковка</label>
             </li>
-            <li class="filter__option">
-              <input id="filter-wifi" type="checkbox" name="infrastructure-3" value="wi-fi">
-              <label for="filter-wifi">Wi-fi</label>
+            <li class='filter__option'>
+              <input id='filter-wifi' type='checkbox' name='infrastructure-3' value='wi-fi'>
+              <label for='filter-wifi'>Wi-fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__accomodation">
+        <fieldset class='filter__accomodation'>
           <legend>Тип жилья</legend>
           <ul>
-            <li class="filter__option">
-              <input id="filter-hotel" type="checkbox" name="accomodation-1" value="hotel" checked>
-              <label for="filter-hotel">Гостиница</label>
+            <li class='filter__option'>
+              <input id='filter-hotel' type='checkbox' name='accomodation-1' value='hotel' checked>
+              <label for='filter-hotel'>Гостиница</label>
             </li>
-            <li class="filter__option">
-              <input id="filter-motel" type="checkbox" name="accomodation-2" value="motel" checked>
-              <label for="filter-motel">Мотель</label>
+            <li class='filter__option'>
+              <input id='filter-motel' type='checkbox' name='accomodation-2' value='motel' checked>
+              <label for='filter-motel'>Мотель</label>
             </li>
-            <li class="filter__option">
-              <input id="filter-apartment" type="checkbox" name="accomodation-3" value="apartment" checked>
-              <label for="filter-apartment">Апартаменты</label>
+            <li class='filter__option'>
+              <input id='filter-apartment' type='checkbox' name='accomodation-3' value='apartment' checked>
+              <label for='filter-apartment'>Апартаменты</label>
             </li>
           </ul>
         </fieldset>
 
-        <div class="filter-form-container">
-          <fieldset class="filter-price">
-            <legend class="filter-price--title">Стоимость в сутки (р):</legend>
-            <div class="filter-price__from">
-              <label for="price-from">от</label>
-              <input id="price-from" type="text" name="value-from" value="0">
+        <div class='filter-form-container'>
+          <fieldset class='filter-price'>
+            <legend class='filter-price--title'>Стоимость в сутки (р):</legend>
+            <div class='filter-price__from'>
+              <label for='price-from'>от</label>
+              <input id='price-from' type='text' name='value-from' value='0'>
             </div>
-            <div class="filter-price__till">
-              <label for="price-till">до</label>
-              <input id="price-till" type="text" name="value-till" value="3000">
+            <div class='filter-price__till'>
+              <label for='price-till'>до</label>
+              <input id='price-till' type='text' name='value-till' value='3000'>
             </div>
-            <div class="filter-price__level-line">
-                <div class="level-line__pin-left"></div>
-                <div class="level-line__size"></div>
-                <div class="level-line__pin-right"></div>
+            <div class='filter-price__level-line'>
+                <div class='level-line__pin-left'></div>
+                <div class='level-line__size'></div>
+                <div class='level-line__pin-right'></div>
               </div>
           </fieldset>
-          <button class="filter-submit" type="submit">Показать</button>
+          <button class='filter-submit' type='submit'>Показать</button>
         </div>
       </form>
 
-      <div class="sort-result">
-        <h2 class="visually-hidden">Выбор варианта жилья</h2>
-        <p>Найдено:<span class="sort-result__length">3</span></p>
-        <p>Сортировка:</p>
-        <ul class="search-point__type">
-          <li class="search-result__item">
-            <button class="btn btn--price">По цене</button>
+      <div class='sort-result'>
+        <h2 class='visually-hidden'>Подбор жилья по параметрам</h2>
+        <span>Найдено:<span class='sort-result__length'>3</span></span>
+        <span>Сортировка:</span>
+        <ul class='search__list'>
+          <li class='search__item'>
+            <a class='btn--price active'>По цене</a>
           </li>
-          <li class="search-point__item">
-            <button class="btn btn--type">По типу</button>
+          <li class='search-point__item'>
+            <a class='btn--type'>По типу</a>
           </li>
-          <li class="search-point__item">
-            <button class="btn btn--rating">По рейтингу</button>
+          <li class='search-point__item'>
+            <a class='btn--rating'>По рейтингу</a>
           </li>
         </ul>
-        <ul class="sort-point__direction">
-          <li class="sort-point__up">
-            <button type="button" class="button--up">вверх</button>
+        <ul class='sort__direction'>
+          <li class='sort__up'>
+            <a class='btn-up'>вверх</a>
           </li>
-          <li class="sort-point__down">
-            <button type="button" class="button--down">вниз</button>
+          <li class='sort__down'>
+            <a class='btn-down'>вниз</a>
           </li>
         </ul>
       </div>
-      <div class="catalog">
-        <ul class="catalog__list">
+      <div class='catalog'>
+        <ul class='catalog__list'>
           <li class='catalog__item'>
             <div class='catalog__image'>
              <img src='img/hotels-1.jpg'  width='135' height='90' alt='Amara Resort & Spa'>
@@ -117,16 +119,16 @@
               </div>
               <div class='catalog__features'>
                 <span class='features-type'>Гостиница</span>
-                <span class='features-price'>От <span class="price">4000</span> Р.</span>
+                <span class='features-price'>От <span class='price'>4000</span> Р.</span>
               </div>
               <div class='catalog__button'>
-                <a class='btn button--more' href='#'>Подробнее</a>
+                <a class='button--more' href='#'>Подробнее</a>
                 <a class='btn button--book' href='#'>Забронировать</a>
               </div>
             </div>
             <div class='catalog__rating'>
               <div class='catalog__stars catalog-stars-2'></div>
-              <div class='catalog__point'>Рейтинг: <span class="rating-point">8,5</span></div>
+              <div class='catalog__point'>Рейтинг: <span class='rating-point'>8,5</span></div>
             </div>
           </li>
 
@@ -142,16 +144,16 @@
               </div>
               <div class='catalog__features'>
                 <span class='features-type'>Мотель</span>
-                <span class='features-price'>От <span class="price">3000</span> Р.</span>
+                <span class='features-price'>От <span class='price'>3000</span> Р.</span>
               </div>
               <div class='catalog__button'>
-                <a class='btn button--more' href='#'>Подробнее</a>
+                <a class='button--more' href='#'>Подробнее</a>
                 <a class='btn button--book' href='#'>Забронировать</a>
               </div>
             </div>
             <div class='catalog__rating'>
               <div class='catalog__stars catalog-stars-2'></div>
-              <div class='catalog__point'>Рейтинг: <span class="rating-point">8,9</span></div>
+              <div class='catalog__point'>Рейтинг: <span class='rating-point'>8,9</span></div>
             </div>
           </li>
 
@@ -167,35 +169,35 @@
               </div>
               <div class='catalog__features'>
                 <span class='features-type'>Апартаменты</span>
-                <span class='features-price'>От <span class="price">2000</span> Р.</span>
+                <span class='features-price'>От <span class='price'>2000</span> Р.</span>
               </div>
               <div class='catalog__button'>
-                <a class='btn button--more' href='#'>Подробнее</a>
+                <a class='button--more' href='#'>Подробнее</a>
                 <a class='btn button--book' href='#'>Забронировать</a>
               </div>
             </div>
             <div class='catalog__rating'>
               <div class='catalog__stars catalog-stars-2'>***</div>
-              <div class='catalog__point'>Рейтинг: <span class="rating-point">9,2</span></div>
+              <div class='catalog__point'>Рейтинг: <span class='rating-point'>9,2</span></div>
             </div>
           </li>
         </ul>
       </div>
     </main>
 
-    <footer class="footer container">
-      <div class="footer__item">
-        <p class="hashtag-sedona">#visitsedona</p>
+    <footer class='footer container'>
+      <div class='footer__item'>
+        <p class='hashtag-sedona'>#visitsedona</p>
       </div>
-      <div class="footer__item">
-        <ul class="footer-social">
-          <li class="footer-social__item footer-social__item--twitter"><a href="#" target="_blank" aria-label="twitter"></a></li>
-          <li class="footer-social__item footer-social__item--facebook"><a href="#" target="_blank" aria-label="facebook"></a></li>
-          <li class="footer-social__item footer-social__item--youtube"><a href="#" target="_blank" aria-label="youtube"></a></li>
+      <div class='footer__item'>
+        <ul class='footer__social'>
+          <li class='social__item social__item--twitter'><a href='#' target='_blank' aria-label='twitter'></a></li>
+          <li class='social__item social__item--facebook'><a href='#' target='_blank' aria-label='facebook'></a></li>
+          <li class='social__item social__item--youtube'><a href='#' target='_blank' aria-label='youtube'></a></li>
         </ul>
       </div>
-      <div class="footer__item">
-        <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'><p class="copyright">website by</p></a>
+      <div class='footer__item'>
+        <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'><p class='copyright'>website by</p></a>
       </div>
     </footer>
   </body>
