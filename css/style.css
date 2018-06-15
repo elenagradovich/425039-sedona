@@ -18,6 +18,11 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -222,7 +227,7 @@ h2 {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-/*Form*/
+/*Форма поиска жилья index*/
 .search-hotel-form {
   position: absolute;
   width: 568px;
@@ -340,3 +345,136 @@ h2 {
   content: url(../img/logo-htmlacademy-active.svg);
 }
 
+/*Catalog*/
+.filter {
+
+  background: #81b3d2 url(../img/filter-background.jpg) no-repeat ;
+  background-position: center -294px;
+  width: 100%;
+}
+
+.filter legend {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__option {
+  color: #ffffff;
+  text-align: left;
+}
+
+
+.filter-price input {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.filter-submit {
+  padding: 11px 33px 11px 35px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-submit:hover,
+.filter-submit:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filter__infrastructure,
+.filter__accomodation,
+.filter-price {
+  border: none;
+}
+
+
+.sort-result__text {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.sort-result__title {
+  display: inline-block;
+  color: #000000;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.sort__list {
+  list-style: none;
+}
+
+.sort-point__item a {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-point__item a:hover {
+  color: #81b3d2;
+}
+.sort-point__item a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sort-point__item .current {
+  color: #81b3d2;
+  border-bottom:none;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.button--more {
+  font-weight: bold;
+  padding: 8px 17px 7px 17px;
+}
+
+.button--book {
+  padding: 8px 16px 7px 17px;
+}
+
+.catalog__item-name a {
+  color: #000000;
+}
+
+.catalog__item-name a:hover {
+  color: #81b3d2;
+}
+
+.catalog__item-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog__features .features-type {
+  color: #333333;
+}
+
+.catalog__rating .catalog__point {
+  padding: 5px 13px 6px 16px;
+  line-height: 100%;
+  background-color: #f2f2f2;
+  color: #666666;
+}
