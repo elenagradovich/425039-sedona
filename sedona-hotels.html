@@ -11,7 +11,7 @@
     <div class='wrapper'>
       <header class='header container catalog'>
         <nav class='header__navigation'>
-          <a class='header__logo' href='#' aria-label='Логотип &#8217; Седона s'>
+          <a class='header__logo' href='index.html' aria-label='Логотип &#8217; Седона &#8217;'>
              <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217; Седона &#8217;'>
           </a>
           <ul class='header__site-navigation'>
@@ -24,94 +24,100 @@
       </header>
 
       <main class='main container catalog'>
-        <h1 class='visually-hidden'>Форма подбора жилья</h1>
-        <form class='filter' action='https://echo.htmlacademy.ru' method='get' >
-          <fieldset class='filter__infrastructure'>
-            <legend>Инфраструктура</legend>
-            <ul>
-              <li class='filter__option'>
-                <input id='filter-swim' type='checkbox' name='infrastructure-1' value='swim' checked>
-                <label for='filter-swim'>Бассейн</label>
-              </li>
-              <li class='filter__option'>
-                <input id='filter-parking' type='checkbox' name='infrastructure-2' value='parking'>
-                <label for='filter-parking'>Парковка</label>
-              </li>
-              <li class='filter__option'>
-                <input id='filter-wifi' type='checkbox' name='infrastructure-3' value='wi-fi'>
-                <label for='filter-wifi'>Wi-fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class='filter__accomodation'>
-            <legend>Тип жилья</legend>
-            <ul>
-              <li class='filter__option'>
-                <input id='filter-hotel' type='checkbox' name='accomodation-1' value='hotel' checked>
-                <label for='filter-hotel'>Гостиница</label>
-              </li>
-              <li class='filter__option'>
-                <input id='filter-motel' type='checkbox' name='accomodation-2' value='motel' checked>
-                <label for='filter-motel'>Мотель</label>
-              </li>
-              <li class='filter__option'>
-                <input id='filter-apartment' type='checkbox' name='accomodation-3' value='apartment' checked>
-                <label for='filter-apartment'>Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <div class='filter-form-container'>
-            <fieldset class='filter-price'>
-              <legend class='filter-price--title'>Стоимость в сутки (р):</legend>
-              <div class='filter__option filter-price__from'>
-                <label for='price-from'>от</label>
-                <input id='price-from' type='text' name='value-from' value='0'>
-              </div>
-              <div class='filter__option filter-price__till'>
-                <label for='price-till'>до</label>
-                <input id='price-till' type='text' name='value-till' value='3000'>
-              </div>
-              <div class='filter-price__level-line'>
-                  <div class='level-line__pin-left'></div>
-                  <div class='level-line__size'></div>
-                  <div class='level-line__pin-right'></div>
-                </div>
+        <section class='filter'>
+          <h1 class='visually-hidden'>Форма подбора жилья</h1>
+          <form class='form-filter' action='https://echo.htmlacademy.ru' method='get' >
+            <fieldset class='filter__item filter__infrastructure'>
+              <legend>Инфраструктура</legend>
+              <ul class='filter__list'>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-swim' type='checkbox' name='infrastructure-1' value='swim' checked>
+                  <label class='option-label' for='filter-swim'>Бассейн</label>
+                </li>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-parking' type='checkbox' name='infrastructure-2' value='parking'>
+                  <label class='option-label' for='filter-parking'>Парковка</label>
+                </li>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-wifi' type='checkbox' name='infrastructure-3' value='wi-fi'>
+                  <label class='option-label' for='filter-wifi'>Wi-fi</label>
+                </li>
+              </ul>
             </fieldset>
-            <button class='filter-submit' type='submit'>Показать</button>
-          </div>
-        </form>
+            <fieldset class='filter__item filter__accomodation'>
+              <legend>Тип жилья</legend>
+              <ul class='filter__list'>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-hotel' type='checkbox' name='accomodation-1' value='hotel' checked>
+                  <label class='option-label' for='filter-hotel'>Гостиница</label>
+                </li>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-motel' type='checkbox' name='accomodation-2' value='motel' checked>
+                  <label class='option-label' for='filter-motel'>Мотель</label>
+                </li>
+                <li class='filter__option'>
+                  <input class='filters-checkbox visually-hidden' id='filter-apartment' type='checkbox' name='accomodation-3' value='apartment' checked>
+                  <label class='option-label' for='filter-apartment'>Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <div class='filter-container'>
+              <fieldset class='filter__price'>
+                <legend class='price__title'>Стоимость в сутки (р):</legend>
+                <div class='price__controls'>
+                  <p class='price__option price__from'>
+                    <label for='price-from'>от </label>
+                    <input id='price-from' type='text' name='value-from' value='0'>
+                  </p>
+
+                  <p class='price__option price__till'>
+                    <label for='price-till'>до </label>
+                    <input id='price-till' type='text' name='value-till' value='3000'>
+                  </p>
+                </div>
+                <div class='price__range'>
+                  <div class='price__scale'>
+                    <div class='price__bar'></div>
+                  </div>
+                  <div class='price__pin pin-left'></div>
+                  <div class='price__pin pin-right'></div>
+                </div>
+              </fieldset>
+            </div>
+            <button class='filter__submit' type='submit'>Показать</button>
+          </form>
+        </section>
+
 
         <div class='sort-result'>
           <h2 class='visually-hidden'>Варианты сортировки найденного жилья</h2>
-          <span class='sort-result__text'>Найдено:<span class='sort-result__length'>3</span></span>
+          <span class='sort-result__length'>Найдено: 3</span>
           <span class='sort-result__title'>Сортировка:</span>
-          <ul class='sort__list'>
-            <li class='sort-point__item'>
+          <ul class='sort-type__list'>
+            <li class='sort-type__item'>
               <a href="#" class='btn--price current'>По цене</a>
             </li>
-            <li class='sort-point__item'>
+            <li class='sort-type__item'>
               <a href="#" class='btn--type'>По типу</a>
             </li>
-            <li class='sort-point__item'>
+            <li class='sort-type__item'>
               <a href="#" class='btn--rating'>По рейтингу</a>
             </li>
           </ul>
           <ul class='sort__direction'>
             <li class='sort__up'>
-              <a href="#" class='btn-up'>вверх</a>
+              <a href="#" class='btn-up'><span class='visually-hidden'>вверх</span></a>
             </li>
-            <li class='sort__down'>
-              <a href="#" class='btn-down'>вниз</a>
+            <li class='sort__down  current-direction'>
+              <a href="#" class='btn-down'><span class='visually-hidden'>вниз</span></a>
             </li>
           </ul>
         </div>
         <div class='catalog'>
           <ul class='catalog__list'>
             <li class='catalog__item'>
-              <div class='catalog__image'>
-               <img src='img/hotels-1.jpg'  width='135' height='90' alt='Amara Resort & Spa'>
-              </div>
+              <img class='catalog__image' src='img/hotels-1.jpg'  width='135' height='90' alt='Amara Resort & Spa'>
               <div class='catalog__info'>
                 <div class='catalog__item-name'>
                   <a href='#'>
@@ -128,15 +134,13 @@
                 </div>
               </div>
               <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-2'></div>
-                <div class='catalog__point'>Рейтинг: <span class='rating-point'>8,5</span></div>
+                <div class='catalog__stars catalog-stars-4'></div>
+                <span class='catalog__point'>Рейтинг: 8,5</span>
               </div>
             </li>
 
             <li class='catalog__item'>
-              <div class='catalog__image'>
-               <img src='img/hotels-2.jpg'  width='135' height='90' alt='Desert Quail Inn'>
-              </div>
+              <img class='catalog__image' src='img/hotels-2.jpg'  width='135' height='90' alt='Desert Quail Inn'>
               <div class='catalog__info'>
                 <div class='catalog__item-name'>
                   <a href='#'>
@@ -153,15 +157,13 @@
                 </div>
               </div>
               <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-2'></div>
-                <div class='catalog__point'>Рейтинг: <span class='rating-point'>8,9</span></div>
+                <div class='catalog__stars catalog-stars-3'></div>
+                <span class='catalog__point'>Рейтинг: 8,9</span>
               </div>
             </li>
 
             <li class='catalog__item'>
-              <div class='catalog__image'>
-               <img src='img/hotels-3.jpg'  width='135' height='90' alt='Villas at Poco Diablo'>
-              </div>
+              <img class='catalog__image' src='img/hotels-3.jpg'  width='135' height='90' alt='Villas at Poco Diablo'>
               <div class='catalog__info'>
                 <div class='catalog__item-name'>
                   <a href='#'>
@@ -178,27 +180,45 @@
                 </div>
               </div>
               <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-2'>***</div>
-                <div class='catalog__point'>Рейтинг: <span class='rating-point'>9,2</span></div>
+                <div class='catalog__stars catalog-stars-2'></div>
+                <span class='catalog__point'>Рейтинг: 9,2</span>
               </div>
             </li>
           </ul>
         </div>
       </main>
 
-      <footer class='footer container catalog'>
+      <footer class='footer container'>
         <div class='footer__item'>
-          <p class='hashtag-sedona'>#visitsedona</p>
+          <span class='hashtag-sedona'>#visitsedona</span>
         </div>
         <div class='footer__item'>
           <ul class='footer__social'>
-            <li class='social__item social__item--twitter'><a href='#' target='_blank' aria-label='twitter'></a></li>
-            <li class='social__item social__item--facebook'><a href='#' target='_blank' aria-label='facebook'></a></li>
-            <li class='social__item social__item--youtube'><a href='#' target='_blank' aria-label='youtube'></a></li>
+            <li class='social__item social__item--twitter'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>twitter</span>
+                <img src='img/twitter-icon.svg' width='17' height='15' alt='twitter'>
+              </a>
+            </li>
+            <li class='social__item social__item--facebook'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>facebook</span>
+                <img src='img/fb-icon.svg' width='12' height='22' alt='facebook'>
+              </a>
+            </li>
+            <li class='social__item social__item--youtube'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>youtube</span>
+                <img src='img/youtube-icon.svg' width='20' height='16' alt='youtube'>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class='footer__item footer__item--copyright'>
-          <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>website by</a>
+        <div class='footer__item'>
+          <a class='footer__item--copyright' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>
+            <span>website by</span>
+            <p class='copyright__image'><span class='visually-hidden'>HTML_academy</span></p>
+          </a>
         </div>
       </footer>
     </div>

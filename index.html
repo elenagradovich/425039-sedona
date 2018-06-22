@@ -32,7 +32,7 @@
           <h2 class='main-content__title'>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
         </div>
-        <div class='flex-container'>
+        <div class='properties-container'>
           <section class='advantages advantages-1'>
             <h2 class='advantages__title'>Настоящий<br>городок</h2>
             <span class='advantages__number'>№1</span>
@@ -74,42 +74,44 @@
             </section>
 
             <section class='advantages'>
-              <h2 class='advantages__title'>Мало туристов</h2>
+              <h2 class='advantages__title'>Мало<br>туристов</h2>
               <span class='advantages__number'>№5</span>
               <span class='advantages__content'>Большинство едет в гранд каньон<br>и толпится там</span>
             </section>
           </div>
         </div>
         <div class='offer'>
-          <h2 class=''></h2>
-          <p class='offer__call'><b>Заинтересовались?</b></p>
+          <h2 class='visually-hidden'>Наше предложение</h2>
+          <span class='offer__call'><b>Заинтересовались?</b></span>
           <span class='offer__content'>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</span>
-          <button type='button' class='btn btn__conditions-search'>Поиск гостиницы в Седоне</button>
-          <form class='search-hotel-form' action='https://echo.htmlacademy.ru' method='get' ><!--ДОбавить hidden -->
-            <label for='checkin-date'>Дата заезда</label>
-            <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017'>
-            <button type='button' class='calendar'>Календарь</button>
-
-            <label for='checkout-date'>Дата выезда</label>
-            <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017'>
-            <button type='button' class='calendar'>Календарь</button>
-
-            <div class='form-input-fields'>
+          <a href='#' class='btn btn__conditions-search'>Поиск гостиницы в Седоне</a>
+          <form class='search-hotel-form' action='https://echo.htmlacademy.ru' method='get'><!--ДОбавить hidden -->
+            <p>
+              <label for='checkin-date'>Дата заезда</label>
+              <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017'>
+              <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
+            </p>
+            <p>
+              <label for='checkout-date'>Дата выезда</label>
+              <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017'>
+              <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
+            </p>
+            <p class='form-input-fields'>
               <label for='adult-amount'>Взрослые</label>
-              <button type='button' class='btn-reduce'>Меньше</button>
+              <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
               <input id='adult-amount' type='text' name='adult-amount' value='2'>
-              <button type='button' class='btn-increase'>Больше</button>
+              <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
               <label for='adult-amount'>Дети</label>
-              <button type='button' class='btn-reduce'>Меньше</button>
+              <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
               <input id='children-amount' type='text' name='adult-amount' value='0'>
-              <button type='button' class='btn-increase'>Больше</button>
-            </div>
+              <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+            </p>
             <button type='submit' class='btn form-submit__btn'>Найти</button>
           </form>
         </div>
         <div class='modal-map'>
           <h2 class='visually-hidden'>Как до нас добраться</h2>
-          <p>
+          <p class='modal-map__image'>
             <img src='img/map.jpg' height='593' width='1200' alt='Седона на карте'>
           </p>
         </div>
@@ -121,13 +123,33 @@
         </div>
         <div class='footer__item'>
           <ul class='footer__social'>
-            <li class='social__item social__item--twitter'><a href='#' target='_blank' aria-label='twitter'></a></li>
-            <li class='social__item social__item--facebook'><a href='#' target='_blank' aria-label='facebook'></a></li>
-            <li class='social__item social__item--youtube'><a href='#' target='_blank' aria-label='youtube'></a></li>
+            <li class='social__item social__item--twitter'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>twitter</span>
+                <img src='img/twitter-icon.svg' width='17' height='15' alt='twitter'>
+              </a>
+            </li>
+            <li class='social__item social__item--facebook'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>facebook</span>
+                <img src='img/fb-icon.svg' width='12' height='22' alt='facebook'>
+              </a>
+            </li>
+            <li class='social__item social__item--youtube'>
+              <a href='#' target='_blank'>
+                <span class='visually-hidden'>youtube</span>
+                <img src='img/youtube-icon.svg' width='20' height='16' alt='youtube'>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class='footer__item footer__item--copyright'>
-          <a href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>website by</a>
+        <div class='footer__item'>
+          <a class='footer__item--copyright' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>
+            <span>website by</span>
+            <p class='copyright__image'>
+              <span class='visually-hidden'>HTML_academy</span>
+            </p>
+          </a>
         </div>
       </footer>
     </div>
