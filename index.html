@@ -41,12 +41,12 @@
 
           <ul class='features'>
             <li class='features__item'>
-              <h2 class='features__title features__title--1'>Жилье</h2>
+              <h2 class='features__title features__title--1'>Жильё</h2>
               <span class='features__content'>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</span>
             </li>
             <li class='features__item'>
               <h2 class='features__title features__title--2'>Еда</h2>
-              <span class='features__content'>Всегда заказывайте фирменный бургер,<br> Вы не разачоруетесь!</span>
+              <span class='features__content'>Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</span>
             </li>
             <li class='features__item'>
               <h2 class='features__title features__title--3'>Сувениры</h2>
@@ -86,38 +86,40 @@
           <span class='offer__content'>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</span>
           <a href='#' class='btn btn__conditions-search'>Поиск гостиницы в Седоне</a>
           <form class='search-hotel-form' action='https://echo.htmlacademy.ru' method='get'><!--ДОбавить hidden -->
-            <p>
-              <label for='checkin-date'>Дата заезда</label>
-              <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017'>
+            <p class='checkin-date'>
+              <label for='checkin-date'>Дата заезда:</label>
+              <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017' autofocus required>
               <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
             </p>
-            <p>
-              <label for='checkout-date'>Дата выезда</label>
-              <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017'>
+            <p class='checkout-date'>
+              <label for='checkout-date'>Дата выезда:</label>
+              <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017' required>
               <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
             </p>
-            <p class='form-input-fields'>
-              <label for='adult-amount'>Взрослые</label>
-              <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
-              <input id='adult-amount' type='text' name='adult-amount' value='2'>
-              <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
-              <label for='adult-amount'>Дети</label>
-              <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
-              <input id='children-amount' type='text' name='adult-amount' value='0'>
-              <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
-            </p>
+            <div class='amount-container'>
+              <p class='amount'>
+                <label for='adult-amount'>Взрослые:</label>
+                <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
+                <input id='adult-amount' type='text' name='adult-amount' value='2'>
+                <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+              </p>
+              <p class='amount children-amount'>
+                <label for='children-amount'>Дети:</label>
+                <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
+                <input id='children-amount' type='text' name='children-amount' value='0'>
+                <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+              </p>
+            </div>
             <button type='submit' class='btn form-submit__btn'>Найти</button>
           </form>
         </div>
         <div class='modal-map'>
-          <h2 class='visually-hidden'>Как до нас добраться</h2>
-          <p class='modal-map__image'>
-            <img src='img/map.jpg' height='593' width='1200' alt='Седона на карте'>
-          </p>
+          <h2 class='visually-hidden'>Седона на карте</h2>
+          <img src='img/map.jpg' height='593' width='1200' alt='Седона на карте'>
         </div>
       </main>
 
-      <footer class='footer container footer--index'>
+      <footer class='footer container'>
         <div class='footer__item'>
           <span class='hashtag-sedona'>#visitsedona</span>
         </div>
