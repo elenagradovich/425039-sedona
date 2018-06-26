@@ -81,41 +81,46 @@
           </div>
         </div>
         <div class='offer'>
-          <h2 class='visually-hidden'>Наше предложение</h2>
-          <span class='offer__call'><b>Заинтересовались?</b></span>
-          <span class='offer__content'>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</span>
-          <a href='#' class='btn btn__conditions-search'>Поиск гостиницы в Седоне</a>
-          <form class='search-hotel-form' action='https://echo.htmlacademy.ru' method='get'><!--ДОбавить hidden -->
-            <p class='checkin-date'>
-              <label for='checkin-date'>Дата заезда:</label>
-              <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017' autofocus required>
-              <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
-            </p>
-            <p class='checkout-date'>
-              <label for='checkout-date'>Дата выезда:</label>
-              <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017' required>
-              <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
-            </p>
-            <div class='amount-container'>
-              <p class='amount'>
-                <label for='adult-amount'>Взрослые:</label>
-                <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
-                <input id='adult-amount' type='text' name='adult-amount' value='2'>
-                <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+          <div class="offer-container">
+            <h2 class='visually-hidden'>Наше предложение</h2>
+            <span class='offer__call'><b>Заинтересовались?</b></span>
+            <span class='offer__content'>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+            <a href='search-form.html' class='btn btn__conditions-search' target="_blank">Поиск гостиницы в Седоне</a>
+          </div>
+          <div class='search-hotel-modal visually-hidden'>
+            <form class='search-hotel-form' action='https://echo.htmlacademy.ru' method='get'>
+              <p class='checkin-date'>
+                <label for='checkin-date'>Дата заезда:</label>
+                <input id='checkin-date' type='text' name='checkin-date' value='24 апреля 2017'>
+                <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
               </p>
-              <p class='amount children-amount'>
-                <label for='children-amount'>Дети:</label>
-                <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
-                <input id='children-amount' type='text' name='children-amount' value='0'>
-                <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+              <p class='checkout-date'>
+                <label for='checkout-date'>Дата выезда:</label>
+                <input id='checkout-date' type='text' name='checkout-date' value='4 июля 2017'>
+                <button type='button' class='calendar'><span class='visually-hidden'>Календарь</span></button>
               </p>
-            </div>
-            <button type='submit' class='btn form-submit__btn'>Найти</button>
-          </form>
+              <div class='amount-container'>
+                <p class='amount'>
+                  <label for='adult-amount'>Взрослые:</label>
+                  <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
+                  <input id='adult-amount' type='text' name='adult-amount' value='2'>
+                  <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+                </p>
+                <p class='amount children-amount'>
+                  <label for='children-amount'>Дети:</label>
+                  <button type='button' class='btn-reduce'><span class='visually-hidden'>Меньше</span></button>
+                  <input id='children-amount' type='text' name='children-amount' value='0'>
+                  <button type='button' class='btn-increase'><span class='visually-hidden'>Больше</span></button>
+                </p>
+              </div>
+              <button type='submit' class='btn form-submit__btn'>Найти</button>
+            </form>
+          </div>
         </div>
-        <div class='modal-map'>
+        <div class='map'>
           <h2 class='visually-hidden'>Седона на карте</h2>
-          <img src='img/map.jpg' height='593' width='1200' alt='Седона на карте'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505970675!2d-111.83015796547197!3d34.8543733810414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1529996993112" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </iframe>
         </div>
       </main>
 
@@ -123,7 +128,7 @@
         <div class='footer__item'>
           <span class='hashtag-sedona'>#visitsedona</span>
         </div>
-        <div class='footer__item'>
+        <div class='footer__item footer__item--social'>
           <ul class='footer__social'>
             <li class='social__item social__item--twitter'>
               <a href='#' target='_blank'>
@@ -155,5 +160,6 @@
         </div>
       </footer>
     </div>
+    <script src='js/script.js'></script>
   </body>
 </html>
