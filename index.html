@@ -4,15 +4,16 @@
     <meta charset='utf-8'>
     <title>HTML Academy: Седона</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic' rel='stylesheet'>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class='wrapper'>
       <header class='header container'>
         <nav class='header__navigation'>
-          <a class='header__logo' href='#' aria-label='Логотип &#8217;Седона&#8217;'>
-             <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217;Седона&#8217;'>
+          <a class='header__logo'>
+            <span class='visually-hidden'>Логотип проекта 'Седона'</span>
+            <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217;Седона&#8217;'>
           </a>
           <ul class='header__site-navigation'>
             <li class="site-navigation__item"><a href='#'>Информация</a></li>
@@ -23,7 +24,7 @@
         </nav>
       </header>
 
-      <main class='container'>
+      <main class='main container'>
         <h1 class='visually-hidden'>Седона</h1>
         <div class='main-header'>
           <img src='img/welcome.png' width='458' height='352' alt='Добро пожаловать в Седону!'>
@@ -119,12 +120,11 @@
         </div>
         <div class='map'>
           <h2 class='visually-hidden'>Седона на карте</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505970675!2d-111.83015796547197!3d34.8543733810414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1529996993112" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505970675!2d-111.83015796547197!3d34.8543733810414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1529996993112" width="1200" height="593" style="border:0" allowfullscreen></iframe>
         </div>
       </main>
 
-      <footer class='footer container'>
+      <footer class='footer container footer--index'>
         <div class='footer__item'>
           <span class='hashtag-sedona'>#visitsedona</span>
         </div>
@@ -160,6 +160,6 @@
         </div>
       </footer>
     </div>
-    <script src='js/script.js'></script>
+    <script src='js/scripts.min.js'></script>
   </body>
 </html>

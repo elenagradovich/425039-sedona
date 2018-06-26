@@ -8,8 +8,8 @@ var childrenAmountField = searchHotelForm.querySelector('#children-amount');
 var submitFormButton = searchHotelForm.querySelector('.form-submit__btn');
 
 var isStorageSupport = true;
-var storageAdultAmount = "";
-var storageChildrenAmount = "";
+var storageAdultAmount = '';
+var storageChildrenAmount = '';
 
 try {
   storageAdultAmount = localStorage.getItem('adultAmount');

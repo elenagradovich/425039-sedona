@@ -4,15 +4,16 @@
     <meta charset='utf-8'>
     <title>HTML Academy: Седона</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic' rel='stylesheet'>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.min.css' rel='stylesheet'>
   </head>
   <body>
     <div class='wrapper'>
       <header class='header container catalog'>
         <nav class='header__navigation'>
-          <a class='header__logo' href='index.html' aria-label='Логотип &#8217; Седона &#8217;'>
-             <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217; Седона &#8217;'>
+          <a class='header__logo' href='index.html'>
+            <span class='visually-hidden'>Логотип проекта 'Седона'</span>
+            <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217; Седона &#8217;'>
           </a>
           <ul class='header__site-navigation'>
             <li class="site-navigation__item"><a href='#'>Информация</a></li>
@@ -32,15 +33,15 @@
               <ul class='filter__list'>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-swim' type='checkbox' name='infrastructure-1' value='swim' checked>
-                  <label class='option-label' for='filter-swim'>Бассейн</label>
+                  <label class='option-label' for='filter-swim' tabindex='0'>Бассейн</label>
                 </li>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-parking' type='checkbox' name='infrastructure-2' value='parking'>
-                  <label class='option-label' for='filter-parking'>Парковка</label>
+                  <label class='option-label' for='filter-parking'  tabindex='0'>Парковка</label>
                 </li>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-wifi' type='checkbox' name='infrastructure-3' value='wi-fi'>
-                  <label class='option-label' for='filter-wifi'>Wi-fi</label>
+                  <label class='option-label' for='filter-wifi' tabindex='0'>Wi-fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -49,15 +50,15 @@
               <ul class='filter__list'>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-hotel' type='checkbox' name='accomodation-1' value='hotel' checked>
-                  <label class='option-label' for='filter-hotel'>Гостиница</label>
+                  <label class='option-label' for='filter-hotel' tabindex='0'>Гостиница</label>
                 </li>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-motel' type='checkbox' name='accomodation-2' value='motel' checked>
-                  <label class='option-label' for='filter-motel'>Мотель</label>
+                  <label class='option-label' for='filter-motel' tabindex='0'>Мотель</label>
                 </li>
                 <li class='filter__option'>
                   <input class='filters-checkbox visually-hidden' id='filter-apartment' type='checkbox' name='accomodation-3' value='apartment' checked>
-                  <label class='option-label' for='filter-apartment'>Апартаменты</label>
+                  <label class='option-label' for='filter-apartment' tabindex='0'>Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -96,21 +97,21 @@
           <span class='sort-result__title'>Сортировка:</span>
           <ul class='sort-type__list'>
             <li class='sort-type__item'>
-              <a href="#" class='btn--price current'>По цене</a>
+              <a href="#" class='btn--price current' tabindex='0'>По цене</a>
             </li>
             <li class='sort-type__item'>
-              <a href="#" class='btn--type'>По типу</a>
+              <a href="#" class='btn--type' tabindex='0'>По типу</a>
             </li>
             <li class='sort-type__item'>
-              <a href="#" class='btn--rating'>По рейтингу</a>
+              <a href="#" class='btn--rating' tabindex='0'>По рейтингу</a>
             </li>
           </ul>
           <ul class='sort__direction'>
             <li class='sort__up'>
-              <a href="#" class='btn-up'><span class='visually-hidden'>вверх</span></a>
+              <a href="#" class='btn-up' tabindex='0'><span class='visually-hidden'>Сортировка по возрастанию</span></a>
             </li>
             <li class='sort__down  current-direction'>
-              <a href="#" class='btn-down'><span class='visually-hidden'>вниз</span></a>
+              <a href="#" class='btn-down' tabindex='0'><span class='visually-hidden'>Сортировка по убыванию</span></a>
             </li>
           </ul>
         </div>
