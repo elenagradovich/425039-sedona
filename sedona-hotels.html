@@ -1,224 +1,232 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="ru">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic' rel='stylesheet'>
-    <link href='css/normalize.css' rel='stylesheet'>
-    <link href='css/style.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class='wrapper'>
-      <header class='header container catalog'>
-        <nav class='header__navigation'>
-          <a class='header__logo' href='index.html'>
-            <span class='visually-hidden'>Логотип проекта 'Седона'</span>
-            <img src='img/main-logo.png' width='138' height='70' alt='Логотип проекта &#8217; Седона &#8217;'>
+    <div class="wrapper">
+      <header class="header container catalog">
+        <nav class="header__navigation">
+          <a class="header__logo" href="index.html">
+            <img src="img/main-logo.png" width="138" height="70" alt="Логотип проекта &#8217; Седона &#8217;">
           </a>
-          <ul class='header__site-navigation'>
-            <li class="site-navigation__item"><a href='#'>Информация</a></li>
-            <li class="site-navigation__item"><a href='#'>Фото и видео</a></li>
-            <li class="site-navigation__item"><a href='#'>Карта штата</a></li>
-            <li class="site-navigation__item active"><a href='#'>Гостиницы</a></li>
+          <ul class="header__site-navigation">
+            <li class="site-navigation__item"><a href="#">Информация</a></li>
+            <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
+            <li class="site-navigation__item"><a href="#">Карта штата</a></li>
+            <li class="site-navigation__item active"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
 
-      <main class='main container catalog'>
-        <section class='filter'>
-          <h1 class='visually-hidden'>Форма подбора жилья</h1>
-          <form class='form-filter' action='https://echo.htmlacademy.ru' method='get' >
-            <fieldset class='filter__item filter__infrastructure'>
+      <main class="main container catalog">
+        <section class="filter">
+          <h1 class="visually-hidden">Форма подбора жилья</h1>
+          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get" >
+            <fieldset class="filter__item filter__infrastructure">
               <legend>Инфраструктура</legend>
-              <ul class='filter__list'>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-swim' type='checkbox' name='infrastructure-1' value='swim' checked>
-                  <label class='option-label' for='filter-swim' tabindex='0'>Бассейн</label>
+              <ul class="filter__list">
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-swim" type="checkbox" name="infrastructure-1" value="swim" checked>
+                  <label class="option-label" for="filter-swim" tabindex="0">Бассейн</label>
                 </li>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-parking' type='checkbox' name='infrastructure-2' value='parking'>
-                  <label class='option-label' for='filter-parking'  tabindex='0'>Парковка</label>
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-parking" type="checkbox" name="infrastructure-2" value="parking">
+                  <label class="option-label" for="filter-parking"  tabindex="0">Парковка</label>
                 </li>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-wifi' type='checkbox' name='infrastructure-3' value='wi-fi'>
-                  <label class='option-label' for='filter-wifi' tabindex='0'>Wi-fi</label>
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-wifi" type="checkbox" name="infrastructure-3" value="wi-fi">
+                  <label class="option-label" for="filter-wifi" tabindex="0">Wi-fi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class='filter__item filter__accomodation'>
+            <fieldset class="filter__item filter__accomodation">
               <legend>Тип жилья</legend>
-              <ul class='filter__list'>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-hotel' type='checkbox' name='accomodation-1' value='hotel' checked>
-                  <label class='option-label' for='filter-hotel' tabindex='0'>Гостиница</label>
+              <ul class="filter__list">
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-hotel" type="checkbox" name="accomodation-1" value="hotel" checked>
+                  <label class="option-label" for="filter-hotel" tabindex="0">Гостиница</label>
                 </li>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-motel' type='checkbox' name='accomodation-2' value='motel' checked>
-                  <label class='option-label' for='filter-motel' tabindex='0'>Мотель</label>
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-motel" type="checkbox" name="accomodation-2" value="motel" checked>
+                  <label class="option-label" for="filter-motel" tabindex="0">Мотель</label>
                 </li>
-                <li class='filter__option'>
-                  <input class='filters-checkbox visually-hidden' id='filter-apartment' type='checkbox' name='accomodation-3' value='apartment' checked>
-                  <label class='option-label' for='filter-apartment' tabindex='0'>Апартаменты</label>
+                <li class="filter__option">
+                  <input class="filters-checkbox visually-hidden" id="filter-apartment" type="checkbox" name="accomodation-3" value="apartment" checked>
+                  <label class="option-label" for="filter-apartment" tabindex="0">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
 
-            <div class='filter-container'>
-              <fieldset class='filter__price'>
-                <legend class='price__title'>Стоимость в сутки (р):</legend>
-                <div class='price__controls'>
-                  <p class='price__option price__from'>
-                    <label for='price-from'>от </label>
-                    <input id='price-from' type='text' name='value-from' value='0'>
+            <div class="filter-container">
+              <fieldset class="filter__price">
+                <legend class="price__title">Стоимость в сутки (р):</legend>
+                <div class="price__controls">
+                  <p class="price__option price__from">
+                    <label for="price-from">от </label>
+                    <input id="price-from" type="text" name="value-from" value="0">
                   </p>
 
-                  <p class='price__option price__till'>
-                    <label for='price-till'>до </label>
-                    <input id='price-till' type='text' name='value-till' value='3000'>
+                  <p class="price__option price__till">
+                    <label for="price-till">до </label>
+                    <input id="price-till" type="text" name="value-till" value="3000">
                   </p>
                 </div>
-                <div class='price__range'>
-                  <div class='price__scale'>
-                    <div class='price__bar'></div>
+                <div class="price__range">
+                  <div class="price__scale">
+                    <div class="price__bar"></div>
                   </div>
-                  <div class='price__pin pin-left'></div>
-                  <div class='price__pin pin-right'></div>
+                  <div class="price__pin pin-left"></div>
+                  <div class="price__pin pin-right"></div>
                 </div>
               </fieldset>
             </div>
-            <button class='filter__submit' type='submit'>Показать</button>
+            <button class="filter__submit" type="submit">Показать</button>
           </form>
         </section>
 
 
-        <div class='sort-result'>
-          <h2 class='visually-hidden'>Варианты сортировки найденного жилья</h2>
-          <span class='sort-result__length'>Найдено: 3</span>
-          <span class='sort-result__title'>Сортировка:</span>
-          <ul class='sort-type__list'>
-            <li class='sort-type__item'>
-              <a href="#" class='btn--price current' tabindex='0'>По цене</a>
+        <div class="sort-result">
+          <h2 class="visually-hidden">Варианты сортировки найденного жилья</h2>
+          <span class="sort-result__length">Найдено: 3</span>
+          <span class="sort-result__title">Сортировка:</span>
+          <ul class="sort-type__list">
+            <li class="sort-type__item">
+              <a href="#" class="btn--price current" tabindex="0">По цене</a>
             </li>
-            <li class='sort-type__item'>
-              <a href="#" class='btn--type' tabindex='0'>По типу</a>
+            <li class="sort-type__item">
+              <a href="#" class="btn--type" tabindex="0">По типу</a>
             </li>
-            <li class='sort-type__item'>
-              <a href="#" class='btn--rating' tabindex='0'>По рейтингу</a>
+            <li class="sort-type__item">
+              <a href="#" class="btn--rating" tabindex="0">По рейтингу</a>
             </li>
           </ul>
-          <ul class='sort__direction'>
-            <li class='sort__up'>
-              <a href="#" class='btn-up' tabindex='0'><span class='visually-hidden'>Сортировка по возрастанию</span></a>
+          <ul class="sort__direction">
+            <li class="sort__direction--item sort__up">
+              <a href="#" class="btn-up" tabindex="0">
+                <span class="visually-hidden">Сортировка по возрастанию</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="10" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+                </svg>
+              </a>
             </li>
-            <li class='sort__down  current-direction'>
-              <a href="#" class='btn-down' tabindex='0'><span class='visually-hidden'>Сортировка по убыванию</span></a>
+            <li class="sort__direction--item sort__down  current-direction">
+              <a href="#" class="btn-down" tabindex="0">
+                <span class="visually-hidden">Сортировка по убыванию</span>
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="10" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-        <div class='catalog'>
-          <ul class='catalog__list'>
-            <li class='catalog__item'>
-              <img class='catalog__image' src='img/hotels-1.jpg'  width='135' height='90' alt='Amara Resort & Spa'>
-              <div class='catalog__info'>
-                <div class='catalog__item-name'>
-                  <a href='#'>
-                    <h3>Amara Resort & Spa</h3>
+        <div class="catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img class="catalog__image" src="img/hotels-1.jpg"  width="135" height="90" alt="Amara Resort & Spa">
+              <div class="catalog__info">
+                <div class="catalog__item-name">
+                  <a href="#">
+                    <h3 tabindex="0">Amara Resort & Spa</h3>
                   </a>
                 </div>
-                <div class='catalog__features'>
-                  <span class='features-type'>Гостиница</span>
-                  <span class='features-price'>От <span class='price'>4000</span> Р.</span>
+                <div class="catalog__features">
+                  <span class="features-type">Гостиница</span>
+                  <span class="features-price">От <span class="price">4000</span> Р.</span>
                 </div>
-                <div class='catalog__button'>
-                  <a class='button--more' href='#'>Подробнее</a>
-                  <a class='btn button--book' href='#'>Забронировать</a>
+                <div class="catalog__button">
+                  <a class="button--more" href="#" tabindex="0">Подробнее</a>
+                  <a class="btn button--book" href="#" tabindex="0">Забронировать</a>
                 </div>
               </div>
-              <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-4'></div>
-                <span class='catalog__point'>Рейтинг: 8,5</span>
+              <div class="catalog__rating">
+                <div class="catalog__stars catalog-stars-4"></div>
+                <span class="catalog__point">Рейтинг: 8,5</span>
               </div>
             </li>
 
-            <li class='catalog__item'>
-              <img class='catalog__image' src='img/hotels-2.jpg'  width='135' height='90' alt='Desert Quail Inn'>
-              <div class='catalog__info'>
-                <div class='catalog__item-name'>
-                  <a href='#'>
-                    <h3>Desert Quail Inn</h3>
+            <li class="catalog__item">
+              <img class="catalog__image" src="img/hotels-2.jpg"  width="135" height="90" alt="Desert Quail Inn">
+              <div class="catalog__info">
+                <div class="catalog__item-name">
+                  <a href="#">
+                    <h3 tabindex="0">Desert Quail Inn</h3>
                   </a>
                 </div>
-                <div class='catalog__features'>
-                  <span class='features-type'>Мотель</span>
-                  <span class='features-price'>От <span class='price'>3000</span> Р.</span>
+                <div class="catalog__features">
+                  <span class="features-type">Мотель</span>
+                  <span class="features-price">От <span class="price">3000</span> Р.</span>
                 </div>
-                <div class='catalog__button'>
-                  <a class='button--more' href='#'>Подробнее</a>
-                  <a class='btn button--book' href='#'>Забронировать</a>
+                <div class="catalog__button">
+                  <a class="button--more" href="#" tabindex="0">Подробнее</a>
+                  <a class="btn button--book" href="#" tabindex="0">Забронировать</a>
                 </div>
               </div>
-              <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-3'></div>
-                <span class='catalog__point'>Рейтинг: 8,9</span>
+              <div class="catalog__rating">
+                <div class="catalog__stars catalog-stars-3"></div>
+                <span class="catalog__point">Рейтинг: 8,9</span>
               </div>
             </li>
 
-            <li class='catalog__item'>
-              <img class='catalog__image' src='img/hotels-3.jpg'  width='135' height='90' alt='Villas at Poco Diablo'>
-              <div class='catalog__info'>
-                <div class='catalog__item-name'>
-                  <a href='#'>
-                    <h3>Villas at Poco Diablo</h3>
+            <li class="catalog__item">
+              <img class="catalog__image" src="img/hotels-3.jpg"  width="135" height="90" alt="Villas at Poco Diablo">
+              <div class="catalog__info">
+                <div class="catalog__item-name">
+                  <a href="#">
+                    <h3 tabindex="0">Villas at Poco Diablo</h3>
                   </a>
                 </div>
-                <div class='catalog__features'>
-                  <span class='features-type'>Апартаменты</span>
-                  <span class='features-price'>От <span class='price'>2000</span> Р.</span>
+                <div class="catalog__features">
+                  <span class="features-type">Апартаменты</span>
+                  <span class="features-price">От <span class="price">2000</span> Р.</span>
                 </div>
-                <div class='catalog__button'>
-                  <a class='button--more' href='#'>Подробнее</a>
-                  <a class='btn button--book' href='#'>Забронировать</a>
+                <div class="catalog__button">
+                  <a class="button--more" href="#" tabindex="0">Подробнее</a>
+                  <a class="btn button--book" href="#" tabindex="0">Забронировать</a>
                 </div>
               </div>
-              <div class='catalog__rating'>
-                <div class='catalog__stars catalog-stars-2'></div>
-                <span class='catalog__point'>Рейтинг: 9,2</span>
+              <div class="catalog__rating">
+                <div class="catalog__stars catalog-stars-2"></div>
+                <span class="catalog__point">Рейтинг: 9,2</span>
               </div>
             </li>
           </ul>
         </div>
       </main>
 
-      <footer class='footer container'>
-        <div class='footer__item'>
-          <span class='hashtag-sedona'>#visitsedona</span>
+      <footer class="footer container">
+        <div class="footer__item">
+          <span class="hashtag-sedona">#visitsedona</span>
         </div>
-        <div class='footer__item'>
-          <ul class='footer__social'>
-            <li class='social__item social__item--twitter'>
-              <a href='#' target='_blank'>
-                <span class='visually-hidden'>twitter</span>
-                <img src='img/twitter-icon.svg' width='17' height='15' alt='twitter'>
+        <div class="footer__item footer__item--social">
+          <ul class="footer__social">
+            <li>
+              <a class="social__item social__item--twitter" href="#" target="_blank">
+                <img src="img/twitter-icon.svg" width="17" height="15" alt="twitter">
               </a>
             </li>
-            <li class='social__item social__item--facebook'>
-              <a href='#' target='_blank'>
-                <span class='visually-hidden'>facebook</span>
-                <img src='img/fb-icon.svg' width='12' height='22' alt='facebook'>
+            <li>
+              <a class="social__item social__item--facebook" href="#" target="_blank">
+                <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
               </a>
             </li>
-            <li class='social__item social__item--youtube'>
-              <a href='#' target='_blank'>
-                <span class='visually-hidden'>youtube</span>
-                <img src='img/youtube-icon.svg' width='20' height='16' alt='youtube'>
+            <li>
+              <a class="social__item social__item--youtube" href="#" target="_blank">
+                <img src="img/youtube-icon.svg" width="20" height="16" alt="youtube">
               </a>
             </li>
           </ul>
         </div>
-        <div class='footer__item'>
-          <a class='footer__item--copyright' href='https://htmlacademy.ru/intensive/htmlcss' target='_blank'>
+        <div class="footer__item">
+          <a class="footer__item--copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" tabindex="0">
             <span>website by</span>
-            <p class='copyright__image'><span class='visually-hidden'>HTML_academy</span></p>
+            <p class="copyright__image">
+              <span class="visually-hidden">HTML_academy</span>
+            </p>
           </a>
         </div>
       </footer>

@@ -7,6 +7,8 @@ var adultAmountField = searchHotelForm.querySelector('#adult-amount');
 var childrenAmountField = searchHotelForm.querySelector('#children-amount');
 var submitFormButton = searchHotelForm.querySelector('.form-submit__btn');
 
+searchHotelModal.classList.add('visually-hidden');
+
 var isStorageSupport = true;
 var storageAdultAmount = '';
 var storageChildrenAmount = '';
