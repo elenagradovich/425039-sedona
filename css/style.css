@@ -1204,15 +1204,15 @@ input[type='radio'].visually-hidden {
   padding: 3px 17px 3px 17px;
 }
 
-.catalog__item-name a {
+.catalog__item-name h3 {
   color: #000000;
 }
 
-.catalog__item-name a:hover {
+.catalog__item-name h3:hover {
   color: #81b3d2;
 }
 
-.catalog__item-name a:active {
+.catalog__item-name h3:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
